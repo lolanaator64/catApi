@@ -110,7 +110,7 @@
                   sub_id: this.sub_id,
                   value: 1 // Voting up (you like it) so send 1
               }
-              let response = await axios.post('https://api.thecatapi.com/v1/votes', body ) // Send the body to create a Vote in your Account
+              let response = await axios.post('https://api.thecatapi.com/v1/votes', body ) 
                     
               await this.getImage();
               await this.getVotes();
